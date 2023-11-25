@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        
+        <div id="lhs">
+            <label>LADER</label>
+            <div id="shows">
+                <div onclick="cancle()" class="cancle" style="float: left;left: 0;position: absolute;font-size: 100px;color: red;">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="course.html">Course</a>
+            </div>
+        </div>
+        <div  onclick="show()" class="stroke">&#8801;</div>
+        <div class="nomenue">
+            <a href="signin.html"><input class="sign" type="button" value="Sign in"></a>
+            <a href="signup.html"><input class="get" type="button" value="Get started"></a>
+        </div>
+    </nav>
+    <main>
+       <h1>Simple pricing, for everyone</h1>
+       <h3>It doesn’t matter what size your business is, our software won’t work well for you.</h3>
+       <div id="cont">
+        <div id="pro">
+            <div id="price">$9</div>
+            <div id="level">Starter</div>
+            <div id="write">Good for anyone who is self-employed and just getting started.</div>
+            <a href="signup.html"><button>Get Started</button></a>
+            <ul>
+                <li>Send 10 quotes and invoices</li>
+                <li>Connect up to 2 bank accounts</li>
+                <li>Track up to 15 expenses per month</li>
+                <li>Manual payroll support</li>
+                <li>Export up to 3 reports</li>
+            </ul>
+        </div>
+        <div id="pro" class="cent">
+            <div id="price">$15</div>
+            <div id="level">Small Business</div>
+            <div id="write">Perfect for small / medium sized businesses.</div>
+            <a href="signup.html"><button style="background-color: rgb(160, 101, 25);color: white;border: none;">Get Started</button></a>
+            <ul>
+                <li>Send 50 quotes and invoices</li>
+                <li>Connect up to 10 bank accounts</li>
+                <li>Track up to 100 expenses per month</li>
+                <li>Manual payroll support</li>
+                <li>Export up to 200 reports</li>
+            </ul>
+        </div>
+        <div id="pro">
+            <div id="price">$39</div>
+            <div id="level">Enterprise</div>
+            <div id="write">For even the biggest enterprise companies.</div>
+            <a href="signup.html"><button>Get Started</button></a>
+            <ul>
+                <li>Send 100 quotes and invoices</li>
+                <li>Connect up to 50 bank accounts</li>
+                <li>Track up to 200 expenses per month</li>
+                <li>Manual payroll support</li>
+                <li>Export up to 500 reports</li>
+            </ul>
+        </div>
+       </div>
+    </main>
+    <footer>
+        <div>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="course.html">Course</a><br><br>
+            <span style="font-size: large;color: white;"> The coding school &copy; 2023</span>
+        </div>
+    </footer>
+    
+</body>
+<style>
+    main{
+        background-color: rgb(160, 101, 25);
+        color: white;
+        padding: 20px;
+    }
+    h1{
+        font-size: 100px;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    #pro{
+        padding: 40px;
+
+    }
+    #price{
+        font-size: 70px;
+    }
+    #level{
+        font-size: 30px;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        width: 300px;
+        color: rgb(160, 101, 25);
+        font-size: x-large;
+    }
+    ul{
+        font-size: 20px;
+    }
+    #write{
+        font-size: 20px;
+    }
+    #cont{
+        display: grid;
+        grid-template-columns: repeat(3,370px);
+        justify-content: center;
+        gap: 100px;
+    }
+    .cent{
+        background-color: rgba(216, 135, 35, 0.664);
+        border-radius: 30px;
+    }
+    footer{
+        margin-top: 10px;
+    }
+    @media (max-width:1200px){
+        #cont{
+            display: grid;
+        grid-template-columns: repeat(1,370px);
+        justify-content: center;
+        gap: 100px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        
+        #lhs label{
+            margin-left: 10px;
+            font-size: xx-large;
+        }
+    }
+</style>
+<script src="script.js"></script>
+</html>

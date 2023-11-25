@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #course1{
+            display: grid;
+            grid-template-columns: repeat(3,400px);
+            justify-content: center;
+            gap:20px;
+        }
+        .program1{
+            border: 2px solid rgb(160, 101, 25);
+            padding: 20px;
+            margin: 30px;
+            position: relative;
+            border-radius: 30px;
+        }
+        .program1 img{
+            border-radius: 15px;
+            width: 100%;
+        }
+        .program1 #name{
+            text-align: center;
+            font-size: 60px;
+            background-color: rgb(160, 101, 25);
+            color: white;
+            position: absolute;
+            padding-top: 50%;
+            border-radius: 30px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transition: .5s ease-in-out;
+        }
+        .program1:hover #name{
+            opacity: 1;
+            
+        }
+        .program1:hover{
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #hold{
+            background-image: url("assets/no5.png");
+        }
+        @media (max-width:1000px){
+        #course1{
+            display: grid;
+            grid-template-columns: repeat(1,370px);
+            justify-content: center;
+            gap: 100px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <div id="lhs">
+            <label>LADER</label>
+            <div id="shows">
+                <div onclick="cancle()" class="cancle" style="float: left;left: 0;position: absolute;font-size: 100px;color: red;">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="course.html">Course</a>
+            </div>
+        </div>
+        <div  onclick="show()" class="stroke">&#8801;</div>
+        <div class="nomenue">
+            <a href="signin.html"><input class="sign" type="button" value="Sign in"></a>
+            <a href="signup.html"><input class="get" type="button" value="Get started"></a>
+        </div>
+    </nav>
+    <main>
+        <div id="hold">
+            <div class="text">
+                <h1>Get the best course </h1>
+                <h2>With code school</h2>
+            </div>
+        </div>
+        <div id="gap"></div>
+        <div id="course1">
+            
+            
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="course.html">Course</a><br><br>
+            <span style="font-size: large;color: white;"> The coding school &copy; 2023</span>
+        </div>
+    </footer>
+</body>
+<script src="script.js">
+    
+</script>
+</html>

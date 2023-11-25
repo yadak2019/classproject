@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="signup-cont">
+        <div id="forms">
+            <a style="background-color: rgb(160, 101, 25);padding: 10px;color: white;border-radius: 5px;" href="index.html">Back</a>
+            <form action="post"></form>
+            <span class="bigboy">Sign in to your account</span>
+            <h3>Do you have an account? <a href="signup.html">Sign up</a> here for free</h3>
+            
+                <label>Email address</label><br>
+                <input type="text"><br>
+                <label>Password</label><br>
+                <input type="password"><br><br>
+                <button>Sign in</button>
+            </form>
+        </div>
+        <div id="imgs">
+           
+        </div>
+    </div>
+</body>
+<style>
+    #signup-cont{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+#forms{
+   
+   margin-top: 50px;
+   margin-left: 50px;
+ 
+    
+}
+
+span{
+    font-size: 80px;
+    color: rgb(160, 101, 25);
+}
+
+#imgs{
+    background-image: url("assets/backgroundimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 500px;
+    padding: 500px;
+    filter: blur(3px);
+    
+}
+label{
+    font-size: 40px;
+    color: rgb(160, 101, 25);
+}
+input{
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+button{
+    padding: 15px 162px;
+    background-color: rgb(160, 101, 25);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: large;
+}
+</style>
+</html>
